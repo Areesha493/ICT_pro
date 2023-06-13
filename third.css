@@ -1,0 +1,70 @@
+body{
+  background: black;
+  color: black;
+}
+.reviews{
+  text-align: center;
+  background:  rgb(177, 133, 22);
+  padding: 70px 0;
+  width: 66%;
+  margin: 100px auto;
+  border-radius: 10px;
+}
+.main{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer{
+  padding: 10px 0;
+  background-color: rgb(0, 0, 0);
+}
+.col{
+  width: 25%;
+}
+.col h4{
+  font-size: 1.2rem;
+  color: rgb(177, 133, 22);
+  margin-bottom: 25px;
+  position: relative; 
+  color: rgb(177, 133, 22);
+  margin left: 10px;
+} 
+.col h4::before{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 50px;
+  left: 0;
+  bottom: -8px;
+  background: var(--main-color);
+}
+.col ul li:not(:last-child){
+  margin-bottom: 15px;
+}
+.col ul li a{
+  color:  rgb(177, 133, 22);
+  font-size: 1.1rem;
+  display: block;
+  text-transform: capitalize;
+  transition: .4s;
+  text-decoration: none;
+  list-style: none;
+} 
+.col ul li a:hover{
+  color: white;
+  background-color:  rgb(177, 133, 22);
+  border-radius: 10px;
+  transform: translateX(-12px);
+}
+.col .social{
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.col .social .a{
+  height: 150px;
+  width:150px;
+  display: inline-flex;
+  color:  rgb(177, 133, 22) ;
+}
